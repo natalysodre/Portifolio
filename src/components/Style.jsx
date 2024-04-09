@@ -30,8 +30,8 @@ export const Ul = styled.ul`
     list-style: none;
 
     a{
-        font-size: 1.2rem;
-        padding: 5rem;
+        font-size: 15px;
+        padding: 4rem;
         text-decoration: none;
         color: white;
     }
@@ -68,7 +68,7 @@ export const Inicio = styled.section`
     }
 
     @media(min-width:320px) and (max-width:768px){
-        height: 150vh; 
+        height: 120vh; 
         flex-direction: column;
 
         img{
@@ -97,18 +97,18 @@ export const BoasVindas = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 50vh;
+    height: 60vh;
 
     h3{
         color: white;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 400;
         text-align: center;
     }
 
     h2{
         color: #8FB996;
-        font-size: 60px;
+        font-size: 50px;
         font-weight: 700;
         text-align: center;
     }
@@ -116,16 +116,16 @@ export const BoasVindas = styled.div`
     p{
         color: white;
         width: 85%;
-        font-size: 20px;
+        font-size: 15px;
         text-align: center;
         line-height: 2.0em;
     }
 
     @media(min-width: 320px) and (max-width:768px){
-        height: 95vh;
+        height: 75vh;
 
         h3{
-            font-size: 22px;
+            font-size: 18px;
         }
 
         h2{
@@ -133,7 +133,6 @@ export const BoasVindas = styled.div`
         }
 
         p{
-            font-size: 18px;
             text-align: left;
         }
     }
@@ -162,6 +161,11 @@ export const Sobre = styled.section`
     align-items: center;
     height: 85vh;
     background-color: #111D13;
+
+    @media(min-width:320px) and (max-width:768px){
+        height: 200vh; 
+        flex-direction: column;
+    }
 `
 
 export const SobreMim = styled.section`
@@ -174,7 +178,7 @@ export const SobreMim = styled.section`
 
     h2{
         color: #8FB996;
-        font-size: 60px;
+        font-size: 40px;
         font-weight: 700;
         text-align: center;
     }
@@ -182,16 +186,25 @@ export const SobreMim = styled.section`
     p{
         color: white;
         width: 85%;
-        font-size: 20px;
+        font-size: 15px;
         line-height: 1.5em;
         margin-bottom: 1.5rem;
+    }
+
+    @media(min-width: 320px) and (max-width:768px){
+        height: 95vh;
+        width: 80%;
+
+        p{
+            width: 90%;
+        }
     }
 `
 
 
 export const Estudos = styled.section`
     width: 20vw;
-    height: 50vh;
+    height: 45vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -202,7 +215,7 @@ export const Estudos = styled.section`
 
     h3{
         color: white;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 400;
         text-align: center;
         background-color: #415D43;
@@ -210,7 +223,7 @@ export const Estudos = styled.section`
 
     h2{
         color: #8FB996;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 700;
         text-align: center;
         background-color: #415D43;
@@ -218,7 +231,7 @@ export const Estudos = styled.section`
 
     p{
         color: white;
-        font-size: 15px;
+        font-size: 11px;
         text-align: center;
         line-height: 2.0em;
         background-color: #415D43;
@@ -227,12 +240,17 @@ export const Estudos = styled.section`
     img{
         background-color: #415D43;
     }
+
+    @media(min-width: 320px) and (max-width:768px){
+        width: 80%;
+        height: 35vh;
+    }
 `
 
 
 export const Habilidades = styled.section`
     width: 20vw;
-    height: 50vh;
+    height: 45vh;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -243,14 +261,70 @@ export const Habilidades = styled.section`
 
     h2{
         color: #8FB996;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 700;
         text-align: center;
     }
 
     img{
-        height: 15vh;
+        height: 10vh;
         margin: 0 auto; 
         display: block;
+    }
+
+    @media(min-width: 320px) and (max-width:768px){
+        width: 80%;
+        height: 35vh;
+
+        h2{
+            font-size: 30px;
+        }
+
+        img{
+            height: 10vh;
+        }
+    }
+`
+//---Estilização do Projetos
+
+export const Projetos = styled.section`
+    background-color: #111D13;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div{
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    h2{
+        color: #8FB996;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    h3{
+        color: white;
+        font-size: 10px;
+        font-weight: 700;
+        text-align: center;
+        border-radius: 30px;
+    }
+
+    img{
+        height: 25vh;
+        margin: 0 auto; 
+        display: block;
+    }
+
+    @media(min-width: 320px) and (max-width:768px){
+
+        h2{
+            font-size: 20px;
+        }
     }
 `
